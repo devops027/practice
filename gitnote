@@ -1,0 +1,5 @@
+Version Control: Git tracks changes, not just files. Committing creates a snapshot of the file’s state.
+
+Staging Area: Allows you to review and control which changes are included in the commit.
+hi purna
+
