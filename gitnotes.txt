@@ -1,3 +1,43 @@
 Version Control: Git tracks changes, not just files. Committing creates a snapshot of the file’s state.
 
 Staging Area: Allows you to review and control which changes are included in the commit.
+
+⚠️ Merge Conflicts
+If both branches have changed the same part of a file, Git will ask you to resolve the conflict manually. You’ll edit the file, remove the conflict markers, then commit the resolved version.
+git checkout main
+git merge feature
+# resolve conflicts if any
+git commit   # if needed
+
+
+
+
+A merge conflict happens when Git can’t figure out how to combine changes from two branches automatically. This usually happens when:
+
+Two people (or branches) edited the same lines in a file.
+
+A file was deleted in one branch and edited in another.
+
+
+
+
+<<<<<<< HEAD
+This is the version from your current branch (e.g., main).
+=======
+This is the version from the branch you're merging in (e.g., feature).
+>>>>>>> feature
+
+
+How to Fix It
+Open the file and decide what the final version should be.
+
+Delete the conflict markers and unwanted code.
+
+Save the file.
+
+Add it to the staging area:
+
+
+
+
+ 
